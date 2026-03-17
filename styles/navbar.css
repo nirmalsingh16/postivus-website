@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 2% 3%;
+}
+
+.navbar {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoImage {
+  width: 20px;
+  height: 20px;
+  animation: rotateLogo 2s linear infinite;
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logoName {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.leftNavItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rightNavItem {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.rightNavItem button {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.rightNavItem button:hover {
+  color: #b9ff66;
+  border-color: #b9ff66;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 5vw;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li:hover {
+  color: #b9ff66;
+  cursor: pointer;
+}
+
+.mobileIcon {
+  display: none;
+}
+
+@media (max-width: 815px) {
+  .rightNavItem {
+    display: none;
+  }
+  .mobileIcon {
+    display: block;
+  }
+}

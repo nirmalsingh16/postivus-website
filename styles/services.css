@@ -1,0 +1,117 @@
+.ServicesWrapper {
+  width: 100%;
+  padding: 2% 3%;
+}
+
+.services {
+  width: 100%;
+  padding: 2% 3%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.servicesUpperPart {
+  display: flex;
+  align-content: center;
+}
+
+.servicesUpperPart h4 {
+  background-color: #b9ff66;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px 10px;
+  align-self: center;
+  border-radius: 5px;
+}
+.servicesUpperPart p {
+  padding: 0px 25px;
+}
+
+.singleService {
+  width: 47%;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+  border-radius: 25px;
+  box-shadow: 0 5px rgba(0, 0, 0, 1);
+}
+
+.leftcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textContentOfService h3 {
+  display: inline-block;
+  word-spacing: 10px;
+  border-radius: 5px;
+}
+
+.arraow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rightContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgGreen {
+  background-color: #b9ff66;
+}
+.colorGreen {
+  background-color: #b9ff66;
+}
+
+.colorwhitish {
+  background-color: #f3f3f3;
+}
+
+.bgwhitish {
+  background-color: #f3f3f3;
+}
+
+.bgblackish {
+  background-color: #191a23;
+}
+
+@media (max-width: 930px) {
+  .singleService {
+    height: 300px;
+    width: 100%;
+    /* gap: 10px; */
+    /* flex-direction: column; */
+  }
+
+  .rightContent img {
+    height: fit-content;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  .singleService {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .singleService .leftcontent {
+    order: 2;
+    gap: 10px;
+  }
+
+  .singleService .rightContent {
+    order: 1;
+  }
+}

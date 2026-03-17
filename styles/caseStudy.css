@@ -1,0 +1,49 @@
+.balckbackground {
+  background-color: #191a23;
+  color: #ffffff;
+}
+
+.caseStudy {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.padding {
+  padding: 45px 45px;
+  width: 100%;
+}
+
+.threeSection {
+  width: 33%;
+  padding: 0 70px;
+}
+
+.borderleft {
+  border-right: 1px solid #ffffff;
+}
+
+.lowerpart {
+  display: flex;
+  align-items: center;
+}
+
+.lowerpart p {
+  font-size: 20px;
+  color: #b9ff66;
+}
+
+@media (max-width: 1000px) {
+  .balckbackground {
+    display: flex;
+    flex-direction: column;
+  }
+  .threeSection {
+    width: 100%;
+    padding-bottom: 20px 30px;
+  }
+  .borderleft {
+    border-right: 0px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+}

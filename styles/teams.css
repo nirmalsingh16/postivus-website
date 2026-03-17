@@ -1,0 +1,69 @@
+.teams {
+  width: 30%;
+  border: 2px solid black;
+  padding: 25px 25px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px black;
+}
+
+.teamSectionUpperPart {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+}
+
+.upperimg {
+  margin-right: 10px;
+}
+
+.teamuppertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.lowerimg {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.teamSectionLowerPart p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.teamswrapper {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.teamsLastbutton {
+  display: flex;
+  justify-content: end;
+  padding: 0 10%;
+}
+
+.teamsLastbutton button {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .teamswrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .teamSectionUpperPart {
+    flex-wrap: wrap;
+  }
+}

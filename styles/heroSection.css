@@ -1,0 +1,86 @@
+/* .heroSection {
+  margin-top: 20px;
+} */
+
+.heroUpperSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.heroUpperSectionLeft h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+
+.heroUpperSectionLeft p {
+  font-size: 15px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.heroUpperSectionLeft button {
+  background-color: #191a23;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.heroUpperSectionLeft button:hover {
+  background-color: #b9ff66;
+  cursor: pointer;
+}
+
+.heroUpperSectionLeft {
+  width: 40%;
+}
+
+.heroUpperSectionRight {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.heroUpperSectionRight img {
+  object-fit: cover;
+  width: 95%;
+}
+
+.heroLowerSection {
+  display: flex;
+  padding: 25px 0;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.heroLowerSection img {
+  filter: grayscale(100%);
+}
+
+@media (max-width: 815px) {
+  .heroUpperSection {
+    flex-direction: column;
+  }
+  .heroUpperSectionLeft {
+    width: auto;
+    order: 2; /* goes to bottom */
+  }
+
+  .heroUpperSectionRight {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    order: 1; /* goes to top */
+  }
+  .heroUpperSectionRight img {
+    object-fit: cover;
+    width: 80%;
+    height: 60%;
+  }
+}

@@ -1,0 +1,11 @@
+.innerCommondiv {
+  width: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.innerCommondiv img {
+  width: 95%;
+  height: 80%;
+}

@@ -1,0 +1,55 @@
+.box {
+  background-color: #f3f3f3;
+  border-radius: 45px;
+  display: flex;
+}
+
+.leftThingshappen {
+  padding: 3% 3%;
+  font-family: "Space Grotesk", sans-serif;
+  margin: auto;
+}
+
+.leftThingshappen h3 {
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.leftThingshappen p {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.leftThingshappen button {
+  background-color: #191a23;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.rightThingshappen {
+  width: 40%;
+}
+
+@media (max-width: 950px) {
+  .box {
+    flex-direction: column;
+  }
+  .leftThingshappen {
+    order: 2;
+  }
+  .rightThingshappen {
+    width: 100%;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rightThingshappen img {
+    width: 80%;
+    object-fit: cover;
+  }
+}
