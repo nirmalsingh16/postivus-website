@@ -1,0 +1,81 @@
+.contactus {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  border-radius: 40px;
+  margin-top: 15px;
+}
+
+.contactLeft {
+  width: 50%;
+  padding: 5% 5%;
+}
+
+.contactLeft label,
+textarea,
+input {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.contactLeft button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.formUpper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.formUpper div {
+  display: flex;
+  align-items: center;
+}
+
+.formUpper input[type="radio"] {
+  margin: 0;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.formUpper input[type="radio"]:checked {
+  background-color: greenyellow;
+}
+
+.contactRight {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgrotate {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  right: 0px;
+  animation: rotateImg 2s linear infinite;
+}
+
+@keyframes rotateImg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
