@@ -1,5 +1,5 @@
 .teams {
-  width: 30%;
+  width: 32%;
   border: 2px solid black;
   padding: 25px 25px;
   border-radius: 40px;
@@ -39,7 +39,9 @@
 }
 
 .teamswrapper {
+  margin-top: 20px;
   width: 100%;
+  justify-content: space-evenly;
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
@@ -65,5 +67,8 @@
   }
   .teamSectionUpperPart {
     flex-wrap: wrap;
+  }
+  .teams {
+    width: 90%;
   }
 }
